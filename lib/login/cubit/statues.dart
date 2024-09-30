@@ -1,10 +1,16 @@
-abstract class AppStatues {}
+abstract class LoginStatues {}
 
+class LoginInitialStatues extends LoginStatues {}
 
-class LoginInitialStatues extends AppStatues{}
-class LoginLoadingStatues extends AppStatues{}
-class LoginSuccessStatues extends AppStatues{}
-class LoginErrorStatues extends AppStatues{
-  final String error ;
+class LoginLoadingStatues extends LoginStatues {}
+
+class LoginSuccessStatues extends LoginStatues {}
+
+class LoginErrorStatues extends LoginStatues {
+  final String error;
   LoginErrorStatues(this.error);
 }
+
+class ChangePasswordStatue extends LoginStatues {}
+class ChangeRememberMeStatue extends LoginStatues {}
+
